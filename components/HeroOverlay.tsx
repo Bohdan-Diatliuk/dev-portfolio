@@ -1,53 +1,17 @@
 "use client";
 
 import { motion, useScroll, useTransform, useMotionTemplate, useMotionValueEvent } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
+import dynamic from "next/dynamic";
+
+const VantaBackground = dynamic(() => import("./VantaBg"), {
+  ssr: false,
+  loading: () => <div className="absolute inset-0 bg-sky-300" />,
+});
 
 export default function HeroOverlay() {
   const spacerRef = useRef<HTMLDivElement>(null);
-  const vantaRef = useRef<HTMLDivElement>(null);
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const vantaEffect = useRef<any>(null);
   const [h1Visible, setH1Visible] = useState(false);
-
-  useEffect(() => {
-    if (!vantaRef.current) return;
-
-    const load = async () => {
-      const THREE = await import("three");
-      const CLOUDS = (await import("vanta/dist/vanta.clouds.min")).default;
-
-      vantaEffect.current = CLOUDS({
-        el: vantaRef.current,
-        THREE,
-        skyColor: 0x68b8d7,
-        cloudColor: 0xadc4d9,
-        cloudShadowColor: 0x183550,
-        sunColor: 0xff9919,
-        sunGlareColor: 0xff6633,
-        sunlightColor: 0xff9933,
-        speed: 1,
-      });
-    };
-
-    load();
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        const canvas = vantaRef.current?.querySelector("canvas") as HTMLCanvasElement;
-        if (!canvas) return;
-        canvas.style.display = entry.isIntersecting ? "block" : "none";
-      },
-      { threshold: 0 }
-    );
-
-    if (vantaRef.current) observer.observe(vantaRef.current);
-
-    return () => {
-      observer.disconnect();
-      vantaEffect.current?.destroy();
-    };
-  }, []);
 
   const { scrollYProgress } = useScroll({
     target: spacerRef,
@@ -74,7 +38,7 @@ export default function HeroOverlay() {
         style={{ opacity: heroOpacity }}
         className="fixed inset-0 z-50 pointer-events-none"
       >
-        <div ref={vantaRef} className="absolute inset-0" />
+        <VantaBackground />
 
         <motion.div
           style={{ y: textY, scale: textScale, opacity: textOpacity, filter: textFilter }}
@@ -101,7 +65,7 @@ export default function HeroOverlay() {
           </h2>
         </motion.div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-48 bg-linear-to-b from-transparent to-black-900 z-10" />
+        <div className="absolute bottom-0 left-0 right-0 h-48 bg-linear-to-b from-transparent to-slate-950 z-10" />
       </motion.div>
 
       <div ref={spacerRef} className="h-[300vh]" />
