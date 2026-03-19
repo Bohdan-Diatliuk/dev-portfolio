@@ -1,2 +1,43 @@
 @import "tailwindcss";
 
+html {
+  scrollbar-width: none;
+  background-color: black;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/src/assets/fonts/ClashDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplayM';
+  src: url('/src/assets/fonts/ClashDisplay-Medium.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplayR';
+  src: url('/src/assets/fonts/ClashDisplay-Regular.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-clash {
+  font-family: 'ClashDisplay', sans-serif;
+}
+
+.font-medium {
+  font-family: 'ClashDisplayM', sans-serif;
+}
+
+.font-regular {
+  font-family: 'ClashDisplayR', sans-serif;
+}

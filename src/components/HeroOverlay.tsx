@@ -37,11 +37,11 @@ export default function HeroOverlay() {
           style={{ y: textY, scale: textScale, opacity: textOpacity, filter: textFilter }}
           className="relative z-10 h-full flex flex-col items-center justify-center gap-6 select-none"
         >
-          <h1 className="text-7xl font-black text-white tracking-tighter leading-none drop-shadow-lg">
+          <h1 className="text-8xl font-clash text-white leading-none drop-shadow-lg">
             {mainText}
           </h1>
 
-          <h2 className="text-4xl font-bold text-white/90 tracking-tight drop-shadow-md flex">
+          <h2 className="text-4xl font-clash text-white/90 drop-shadow-md flex">
             {text.split("").map((char, i) => (
               <motion.span
                 key={i}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 11" fill="currentColor">
+  <style>
+  
+    :root {
+      color: #000000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color: #ffffff;
+      }
+    }
+  </style>
+
+  <defs>
+    <mask id="face-mask">
+      <rect width="100%" height="100%" fill="white"/>
+      <rect x="2.1" y="4" width="5.8" height="3.8" rx="1.9" fill="black"/>
+    </mask>
+  </defs>
+
+  <line x1="3" y1="2" x2="1.5" y2="0.5" stroke="currentColor" stroke-width="0.7" stroke-linecap="round"/>
+  <line x1="7" y1="2" x2="8.5" y2="0.5" stroke="currentColor" stroke-width="0.7" stroke-linecap="round"/>
+
+  <circle cx="5" cy="6" r="4.5" mask="url(#face-mask)" />
+
+  <circle cx="3.6" cy="5.8" r="0.5" />
+  <circle cx="6.4" cy="5.8" r="0.5" />
+</svg>

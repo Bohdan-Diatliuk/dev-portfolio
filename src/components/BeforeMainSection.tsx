@@ -8,9 +8,9 @@ export default function BeforeMainSection() {
   const text = "I create modern, responsive, \nand user friendly web applications.";
 
   return (
-    <section className="relative z-[60] min-h-screen flex items-center px-4 sm:px-12 md:px-20 lg:px-32 bg-slate-950">
+    <section className="relative z-60 min-h-screen flex items-center px-4 sm:px-12 md:px-20 lg:px-32 bg-black-950">
       <div ref={ref} className="max-w-5xl mx-auto">
-        <h2 className="text-4xl md:text-7xl font-black tracking-tight leading-none text-white">
+        <h2 className="text-4xl md:text-7xl font-clash leading-none text-white">
           {text.split("").map((char, i) => (
             <motion.span
               key={i}

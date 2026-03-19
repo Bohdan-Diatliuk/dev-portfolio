@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom'
-import HeroSection from '../components/HeroSection'
+import HeroPage from './pages/HeroPage'
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<HeroSection />} />
+      <Route path="/" element={<HeroPage />} />
       {/* сторінки проєктів — додаси пізніше */}
       {/* <Route path="/projects/:slug" element={<ProjectPage />} /> */}
     </Routes>
