@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useRef } from "react";
 
 declare global {
@@ -11,13 +9,13 @@ declare global {
   }
 }
 
-export default function VantaBackground() {
+export default function VantaBg() {
   const vantaRef = useRef<HTMLDivElement>(null);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const vantaEffect = useRef<any>(null);
 
   useEffect(() => {
-    if (!vantaRef.current || !window.VANTA || !window.THREE) return;
+    if (!vantaRef.current || !window.VANTA) return;
 
     vantaEffect.current = window.VANTA.CLOUDS({
       el: vantaRef.current,
@@ -31,22 +29,8 @@ export default function VantaBackground() {
       speed: 1,
     });
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        const canvas = vantaRef.current?.querySelector("canvas") as HTMLCanvasElement;
-        if (!canvas) return;
-        canvas.style.display = entry.isIntersecting ? "block" : "none";
-      },
-      { threshold: 0 }
-    );
-
-    if (vantaRef.current) observer.observe(vantaRef.current);
-
-    return () => {
-      observer.disconnect();
-      vantaEffect.current?.destroy();
-    };
+    return () => vantaEffect.current?.destroy();
   }, []);
 
-  return <div ref={vantaRef} className="absolute inset-0 bg-sky-300" />;
+  return <div ref={vantaRef} className="absolute inset-0" />;
 }

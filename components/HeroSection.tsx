@@ -1,6 +1,4 @@
-"use client";
-
-import projects from '@/lib/projects.json';
+import projects from '../lib/projects.json';
 import BeforeMainSection from "./BeforeMainSection";
 import HeroOverlay from "./HeroOverlay";
 import { motion, useInView } from 'framer-motion';
@@ -19,11 +17,11 @@ export default function HeroSection() {
       <HeroOverlay />
       <BeforeMainSection />
 
-      <main className="relative z-10 bg-black-950 px-6 sm:px-12 md:px-20 lg:px-32 py-32">
+      <main className="relative z-10 bg-slate-950 px-6 sm:px-12 md:px-20 lg:px-32 py-32">
 
         <section ref={stackRef} className="max-w-5xl mx-auto">
           <motion.h3
-            className="text-9xl font-bold pb-10"
+            className="text-9xl font-bold pb-10 text-white"
             initial={{ opacity: 0, y: 30 }}
             animate={stackInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -39,13 +37,9 @@ export default function HeroSection() {
           className="overflow-hidden w-screen -mx-6 sm:-mx-12 md:-mx-20 lg:-mx-32 my-8"
         >
           <motion.div
-            className="flex gap-8 whitespace-nowrap mb-100"
+            className="flex gap-8 whitespace-nowrap"
             animate={{ x: ["0%", "-50%"] }}
-            transition={{
-              duration: 20,
-              repeat: Infinity,
-              ease: "linear",
-            }}
+            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           >
             {[...Array(2)].map((_, j) => (
               <span key={j} className="flex gap-8 text-6xl font-mono text-white uppercase tracking-widest">
@@ -77,11 +71,11 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={projectsInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: i * 0.1, ease: "easeOut" }}
-                className="rounded-2xl border border-slate-200 bg-black-800 p-8 hover:bg-slate-50 hover:border-slate-300 transition-colors duration-300 shadow-sm"
+                className="rounded-2xl border border-white/10 bg-white/5 p-8 hover:bg-white/10 hover:border-white/20 transition-colors duration-300"
               >
-                <div className="w-10 h-10 rounded-xl bg-blue-100 mb-6" />
-                <h4 className="text-xl font-semibold mb-2 text-slate-900">{project.title}</h4>
-                <p className="text-slate-500 text-sm">{project.description}</p>
+                <div className="w-10 h-10 rounded-xl bg-blue-500/20 mb-6" />
+                <h4 className="text-xl font-semibold mb-2 text-white">{project.title}</h4>
+                <p className="text-white/50 text-sm">{project.description}</p>
               </motion.div>
             ))}
           </div>

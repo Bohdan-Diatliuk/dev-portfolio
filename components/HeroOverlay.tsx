@@ -1,13 +1,6 @@
-"use client";
-
 import { motion, useScroll, useTransform, useMotionTemplate, useMotionValueEvent } from "framer-motion";
 import { useRef, useState } from "react";
-import dynamic from "next/dynamic";
-
-const VantaBackground = dynamic(() => import("./VantaBg"), {
-  ssr: false,
-  loading: () => <div className="absolute inset-0 bg-sky-300" />,
-});
+import VantaBackground from "./VantaBg";
 
 export default function HeroOverlay() {
   const spacerRef = useRef<HTMLDivElement>(null);
@@ -54,10 +47,7 @@ export default function HeroOverlay() {
                 key={i}
                 initial={{ opacity: 0 }}
                 animate={h1Visible ? { opacity: 1 } : {}}
-                transition={{
-                  duration: 0.05,
-                  delay: i * 0.06,
-                }}
+                transition={{ duration: 0.05, delay: i * 0.06 }}
               >
                 {char === " " ? "\u00A0" : char}
               </motion.span>
