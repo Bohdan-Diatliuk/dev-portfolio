@@ -3,6 +3,12 @@
 html {
   scrollbar-width: none;
   background-color: black;
+  user-select: none;
+  cursor: url('/public/cursor/cursor.svg') 32 22, auto;
+}
+
+a, button, .hoverable {
+  cursor: url('/public/cursor/cursor-pointer.svg') 6 4, pointer;
 }
 
 html::-webkit-scrollbar {
@@ -37,6 +43,13 @@ html::-webkit-scrollbar {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'JetBrainsM';
+  src: url('/src/assets/fonts/JetBrainsMono-Medium.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
 .font-clash {
   font-family: 'ClashDisplay', sans-serif;
 }
@@ -51,4 +64,8 @@ html::-webkit-scrollbar {
 
 .font-light {
   font-family: 'ClashDisplayL', sans-serif;
+}
+
+.font-jet {
+  font-family: 'JetBrainsM', sans-serif;
 }
