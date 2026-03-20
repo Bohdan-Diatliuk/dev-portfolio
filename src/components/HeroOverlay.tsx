@@ -12,7 +12,7 @@ export default function HeroOverlay() {
   });
 
   const heroOpacity = useTransform(scrollYProgress, [0, 0.6, 1], [1, 0, 0]);
-  const textOpacity = useTransform(scrollYProgress, [0, 0.15, 0.5], [0, 1, 0]);
+  const textOpacity = useTransform(scrollYProgress, [0, 0.15, 0.3], [0, 1, 0]);
   const textY = useTransform(scrollYProgress, [0, 0.15, 0.6], ["20px", "0px", "-40px"]);
   const textScale = useTransform(scrollYProgress, [0, 0.15, 0.5], [1.3, 1, 1]);
   const textBlur = useTransform(scrollYProgress, [0, 0.15], [12, 0]);
@@ -58,7 +58,7 @@ export default function HeroOverlay() {
         <div className="absolute bottom-0 left-0 right-0 h-48 bg-linear-to-b from-transparent to-slate-950 z-10" />
       </motion.div>
 
-      <div ref={spacerRef} className="h-[450vh]" />
+      <div ref={spacerRef} className="h-[250vh]" />
     </>
   );
 }
