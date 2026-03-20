@@ -1,3 +1,3 @@
 # Bohdan Diatliuk Portfolio 
 
-- (Demo)["https://dev-portfolio-two-sepia.vercel.app/"]
+- [Demo](https://dev-portfolio-two-sepia.vercel.app/)
