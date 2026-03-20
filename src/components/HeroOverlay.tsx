@@ -33,13 +33,6 @@ export default function HeroOverlay() {
       >
         <VantaBackground />
 
-        <h1
-          className="sr-only"
-          aria-hidden="false"
-        >
-          Hi, I'm Bohdan! FullStack Developer
-        </h1>
-
         <motion.div
           style={{ y: textY, scale: textScale, opacity: textOpacity, filter: textFilter }}
           className="relative z-10 h-full flex flex-col items-center justify-center gap-6 select-none"

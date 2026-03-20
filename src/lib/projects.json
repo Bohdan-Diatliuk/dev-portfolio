@@ -17,9 +17,9 @@
         ],
         "image": "dyne-icon.svg",
         "images": [
-            "video:dyne/video-d.mp4",
             "dyne/main.webp",
             "dyne/home.webp",
+            "video:dyne/video-d.mp4",
             "dyne/profile.webp",
             "dyne/chat.webp",
             "dyne/edit-profile.webp",
@@ -48,10 +48,10 @@
         ],  
         "image": "monolit-icon.svg",
         "images": [
-            "video:monolit/video-m.mp4",
             "monolit/main.webp",
             "monolit/main-prod.webp",
             "monolit/theme.webp",
+            "video:monolit/video-m.mp4",
             "monolit/prod.webp",
             "monolit/prod-2.webp",
             "monolit/cart.webp",
