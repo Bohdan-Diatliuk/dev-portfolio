@@ -3,9 +3,9 @@ import { useRef } from 'react';
 
 function MyToolsSection() {
     const stack = ["JavaScript", "TypeScript", "React", "Redux", "Redux-Toolkit", "Zustand",];
-    const stackB = ["Node.js", "Nest.js", "PostgreSQL", "HTML5", "CSS3", "Tailwind CSS"]
-    const stackF = ["SCSS/SASS", "Docker", "React Native", "REST API", "Next.js", "Daisy UI"];
-    const coreStack = ["JavaScript", "React", "TypeScript", "Tailwind CSS"]
+    const stackB = ["Node.js", "Nest.js", "PostgreSQL", "HTML5", "CSS3", "TailwindCSS"]
+    const stackF = ["SCSS/SASS", "Docker", "React Native", "REST API", "Next.js", "DaisyUI"];
+    const coreStack = ["JavaScript", "React", "TypeScript", "TailwindCSS"]
 
     const stackRef = useRef(null);
     const stackInView = useInView(stackRef, { margin: "-100px" });

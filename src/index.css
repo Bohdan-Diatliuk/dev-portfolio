@@ -30,6 +30,13 @@ html::-webkit-scrollbar {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ClashDisplayL';
+  src: url('/src/assets/fonts/ClashDisplay-Light.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
 .font-clash {
   font-family: 'ClashDisplay', sans-serif;
 }
@@ -40,4 +47,8 @@ html::-webkit-scrollbar {
 
 .font-regular {
   font-family: 'ClashDisplayR', sans-serif;
+}
+
+.font-light {
+  font-family: 'ClashDisplayL', sans-serif;
 }

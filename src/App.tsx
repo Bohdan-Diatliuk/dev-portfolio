@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router-dom'
 import HeroPage from './pages/HeroPage'
+import ProjectPage from './pages/ProjectPage'
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<HeroPage />} />
-      {/* сторінки проєктів — додаси пізніше */}
-      {/* <Route path="/projects/:slug" element={<ProjectPage />} /> */}
+      <Route path="/projects/:slug" element={<ProjectPage />} />
     </Routes>
   )
 }

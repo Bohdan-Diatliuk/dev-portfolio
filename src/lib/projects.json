@@ -3,144 +3,184 @@
         "id": 1,
         "slug": "dyne",
         "title": "DYNE",
+        "titleD": "DYNE - Social Platform",
         "description": "social platform for chating",
         "category": ["Social Network", "Fullstack", "Medium"],
-        "stack": ["Next.js", "React", "TypeScript", "Supabase", "Tailwind CSS", "tsPartical", "next-intl"],
+        "stack": ["Next.js", "React", "TypeScript", "Supabase", "TailwindCSS", "tsPartical", "next-intl"],
         "github": "https://github.com/Bohdan-Diatliuk/dyne",
         "demo": "https://dyne-gold.vercel.app/en",
-        "feedback": "",
-        "image": "dyne-icon.svg"
+        "feedback": [
+            "Dyne is a social network designed to help users communicate, share ideas, and find like-minded people. After signing up, each user is directed to their personal profile, where they can actively engage with others: send messages in private chats, participate in group discussions, and quickly find the right people using the search function.",
+            "Users can create short text posts, share their thoughts and observations, while others can comment on and interact with them. An important feature is the ability to follow other users - this allows you to stay updated and discover new ideas and content that interest you specifically.",
+            "In addition, Dyne offers full customization: profile editing, interface theme settings, and language selection, ensuring that using the platform is as convenient and comfortable as possible. All features are designed to make the interface intuitive and the user experience fast and enjoyable.",
+            "On Dyne, users always have control over their accounts and content; they can easily find friends and like-minded people, create their own space for self-expression, and stay connected with a global community. It’s not just a social network - it’s a platform where everything works, and where everyone can be themselves, meet new people, and share their thoughts."
+        ],
+        "image": "dyne-icon.svg",
+        "images": [
+            "dyne/main.png",
+            "dyne/home.png",
+            "dyne/profile.png",
+            "dyne/chat.png",
+            "dyne/edit-profile.png",
+            "dyne/post.png",
+            "dyne/messages.png",
+            "dyne/user.png",
+            "dyne/settings.png",
+            "dyne/search.png"
+        ]
     },
     {
         "id": 2,
         "slug": "monolit-digital",
         "title": "Monolit Digital Store",
+        "titleD": "Monolit - Gadgets Store",
         "description": "gadgets store for everyone",
         "category": ["Store", "Team Project", "Frontend", "Medium"],
-        "stack": ["React", "React Router", "TypeScript", "Zustand", "Tailwind CSS", "Swiper.js", "Clerk"],
+        "stack": ["React", "React Router", "TypeScript", "Zustand", "TailwindCSS", "Swiper.js", "Clerk"],
         "github": "https://github.com/fs-aug25-Monolit-Digital/nice-gadgets-monolit",
         "demo": "https://nice-gadgets-monolit.netlify.app/",
         "feedback": "",
-        "image": "monolit-icon.svg"
+        "image": "monolit-icon.svg",
+        "images": []
     },
     {
         "id": 3,
         "slug": "todo-app",
         "title": "TodoApp",
+        "titleD": "TodoApp - Task Manager",
         "description": "todo app for your tasks",
         "category": ["Frontend", "Easy"],
         "stack": ["React", "TypeScript", "Bulma", "SCSS/SASS"],
         "github": "https://github.com/Bohdan-Diatliuk/TodoApp",
         "demo": "https://bohdan-diatliuk.github.io/TodoApp/",
         "feedback": "",
-        "image": ""
+        "image": "todoApp-icon.png",
+        "images": []
     },
     {
         "id": 4,
         "slug": "my-bike",
         "title": "MYBIKE",
+        "titleD": "MYBIKE - Landing Page",
         "description": "great landing for bikes",
         "category": ["Landing", "Frontend", "Easy"],
-        "stack": ["HTML", "SCSS/SASS", "BEM", "CSS Grid"],
+        "stack": ["HTML", "SCSS/SASS", "BEM", "CSS-Grid"],
         "github": "https://github.com/Bohdan-Diatliuk/MyBike-landing_page",
         "demo": "https://bohdan-diatliuk.github.io/MyBike-landing_page/",
         "feedback": "",
-        "image": "mybike-icon.png"
+        "image": "mybike-icon.png",
+        "images": []
     },
     {
         "id": 5,
         "slug": "bose",
         "title": "BOSE",
+        "titleD": "BOSE - Landing Page",
         "description": "first landing in my life",
         "category": ["Landing", "Frontend", "Easy"],
         "stack": ["HTML", "SCSS/SASS", "BEM"],
         "github": "",
         "demo": "https://bdtlk-bose-web.netlify.app/",
         "feedback": "",
-        "image": ""
+        "image": "bose-icon.png",
+        "images": []
     },
     {
         "id": 6,
         "slug": "theprimemarket",
-        "title": "ThePrimeMarket",
+        "title": "The Prime Market",
+        "titleD": "TPM - Internet Store",
         "description": "internet store",
         "category": ["In Progress", "Store", "Fullstack", "Team Project", "Medium"],
-        "stack": ["React", "React Router", "Node.js", "NestJs", "PostgreSQL", "Tailwind CSS", "shadcn/ui", "Docker"],
+        "stack": ["React", "React Router", "Node.js", "NestJs", "PostgreSQL", "TailwindCSS", "shadcn/ui", "Docker"],
         "github": "https://github.com/Coveria/ThePrimeMarket",
         "demo": "",
         "feedback": "",
-        "image": ""
+        "image": "tpm-icon.png",
+        "images": []
     },
     {
         "id": 7,
         "slug": "kritik",
         "title": "Kritik",
+        "titleD": "Kritik",
         "description": "rate this product here",
         "category": ["In Progress", "Store", "Fullstack", "Medium"],
-        "stack": ["React", "TypeScript", "Tailwind CSS", "Node.js", "NestJs"],
+        "stack": ["React", "TypeScript", "TailwindCSS", "Node.js", "NestJs"],
         "github": "https://github.com/Bohdan-Diatliuk/kritik",
         "demo": "",
         "feedback": "",
-        "image": ""
+        "image": "kritik-icon.png",
+        "images": []
     },
     {
         "id": 8,
         "slug": "user-weather-app",
         "title": "User Weather App",
+        "titleD": "User Weather App",
         "description": "current weather information",
         "category": ["Challenges", "Frontend", "Easy"],
         "stack": ["React", "React Router","TypeScript", "Redux-Toolkit", "Axios", "SCSS/SASS", "Lucide-React"],
         "github": "https://github.com/Bohdan-Diatliuk/UserWeatherApp",
         "demo": "https://bohdan-diatliuk.github.io/UserWeatherApp/#/",
         "feedback": "",
-        "image": ""
+        "image": "uwp-icon.png",
+        "images": []
     },
     {
         "id": 9,
         "slug": "react-cv-viewer",
         "title": "React CV Viewer",
+        "titleD": "React CV Viewer",
         "description": "look, it's cv",
         "category": ["Challenges", "Frontend", "Easy"],
         "stack": ["React", "TypeScript", "SCSS/SASS"],
         "github": "https://github.com/Bohdan-Diatliuk/react-cv-viewer",
         "demo": "",
         "feedback": "",
-        "image": ""
+        "image": "cv-icon.png",
+        "images": []
     },
     {
         "id": 10,
         "slug": "cache-inspector",
         "title": "Cache Inspector Dashboard",
+        "titleD": "Cache Inspector Dashboard",
         "description": "cache viewer",
         "category": ["Challenges", "Frontend", "Easy"],
-        "stack": ["React", "TypeScript", "Tailwind CSS"],
+        "stack": ["React", "TypeScript", "TailwindCSS"],
         "github": "https://github.com/Bohdan-Diatliuk/CasheInspector-Dashboard",
         "demo": "https://bohdan-diatliuk.github.io/CasheInspector-Dashboard/",
         "feedback": "",
-        "image": ""
+        "image": "cache-icon.png",
+        "images": []
     },
     {
         "id": 11,
         "slug": "neon-drift",
         "title": "NEON DRIFT",
+        "titleD": "NEOOON DRIGT - Game",
         "description": "drive = life",
-        "category": ["In Progress", "Fullstack", "Medium"],
+        "category": ["In Progress", "Fullstack", "Game", "Medium"],
         "stack": ["Pixi.js", "TypeScript", "Node.js", "Express", "Docker"],
         "github": "https://github.com/Bohdan-Diatliuk/neon-drifts",
         "demo": "",
         "feedback": "",
-        "image": ""
+        "image": "neon-icon.png",
+        "images": []
     },
     {
         "id": 12,
         "slug": "dyne-mobile",
         "title": "DYNE APP",
+        "titleD": "DYNE - Chat",
         "description": "mobile version for chating",
         "category": ["In Progress", "Fullstack", "Medium"],
         "stack": ["React Native", "Node.js", "NestJs"],
         "github": "https://github.com/Bohdan-Diatliuk/dyne-mobile",
         "demo": "",
         "feedback": "",
-        "image": ""
+        "image": "dyne-icon.svg",
+        "images": []
     }
 ]
