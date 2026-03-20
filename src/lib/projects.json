@@ -17,6 +17,7 @@
         ],
         "image": "dyne-icon.svg",
         "images": [
+            "video:dyne/video-d.mp4",
             "dyne/main.png",
             "dyne/home.png",
             "dyne/profile.png",
@@ -39,9 +40,29 @@
         "stack": ["React", "React Router", "TypeScript", "Zustand", "TailwindCSS", "Swiper.js", "Clerk"],
         "github": "https://github.com/fs-aug25-Monolit-Digital/nice-gadgets-monolit",
         "demo": "https://nice-gadgets-monolit.netlify.app/",
-        "feedback": "",
+        "feedback": [
+            "Monolit is an online gadget store that was created as a team project and fully launched in just two weeks. The main idea is to provide users with a simple and convenient way to find and purchase gadgets without any unnecessary complications.",
+            "The app features a user-friendly product catalog where users can browse gadgets, select the ones they like, and place orders. A search function is also available, allowing users to quickly find the products they need among a large selection.",
+            "Users can create their own profile for a more personalized experience, but this is not required—the core features are available right away. Additionally, the ability to change the interface theme has been implemented, making the user experience more comfortable.",
+            "Monolit is an example of how a fully-fledged, user-friendly, and functional e-commerce platform can be built in a short amount of time."
+        ],  
         "image": "monolit-icon.svg",
-        "images": []
+        "images": [
+            "video:monolit/video-m.mp4",
+            "monolit/main.png",
+            "monolit/main-prod.png",
+            "monolit/theme.png",
+            "monolit/prod.png",
+            "monolit/prod-2.png",
+            "monolit/cart.png",
+            "monolit/cart-2.png",
+            "monolit/cart-3.png",
+            "monolit/auth-1.png",
+            "monolit/auth-2.png",
+            "monolit/catalog.png",
+            "monolit/favourites.png",
+            "monolit/policies.png"
+        ]
     },
     {
         "id": 3,
@@ -53,9 +74,19 @@
         "stack": ["React", "TypeScript", "Bulma", "SCSS/SASS"],
         "github": "https://github.com/Bohdan-Diatliuk/TodoApp",
         "demo": "https://bohdan-diatliuk.github.io/TodoApp/",
-        "feedback": "",
+        "feedback": [
+            "TodoApp is a simple and user-friendly app for managing daily tasks. Its main goal is to help users stay on top of their to-do lists without cluttering the interface.",
+            "The app lets you create tasks, edit them, and mark them as completed. All tasks are conveniently organized into categories: active, completed, or all, allowing you to quickly navigate the list and focus on what matters."
+        ],
         "image": "todoApp-icon.png",
-        "images": []
+        "images": [
+            "todoApp/main.png",
+            "todoApp/all.png",
+            "todoApp/all-2.png",
+            "todoApp/active.png",
+            "todoApp/change.png",
+            "todoApp/completed.png"
+        ]
     },
     {
         "id": 4,
@@ -67,9 +98,20 @@
         "stack": ["HTML", "SCSS/SASS", "BEM", "CSS-Grid"],
         "github": "https://github.com/Bohdan-Diatliuk/MyBike-landing_page",
         "demo": "https://bohdan-diatliuk.github.io/MyBike-landing_page/",
-        "feedback": "",
+        "feedback": [
+            "MYBIKE is a single-page landing page created to showcase skills in responsive web design and working with SCSS/SASS preprocessors. The project focuses on a clean, intuitive interface and proper display across various devices.",
+            "The main content of the page consists of bicycles, along with their descriptions, prices, and visual details, including images. All the information is organized in such a way that users can easily browse the products and quickly find what interests them.",
+            "An Explore button has also been added, which redirects the user to an actual online bicycle store, creating the sense of a complete user experience.",
+            "MYBIKE is a simple yet telling example of how to create a modern and appealing landing page with the right approach to layout."
+        ],
         "image": "mybike-icon.png",
-        "images": []
+        "images": [
+            "video:mybike/video-b.mp4",
+            "mybike/main.png",
+            "mybike/compare.png",
+            "mybike/details.png",
+            "mybike/contacts.png"
+        ]
     },
     {
         "id": 5,
@@ -79,11 +121,19 @@
         "description": "first landing in my life",
         "category": ["Landing", "Frontend", "Easy"],
         "stack": ["HTML", "SCSS/SASS", "BEM"],
-        "github": "",
         "demo": "https://bdtlk-bose-web.netlify.app/",
-        "feedback": "",
+        "feedback": [
+            "BOSE is a single-page landing page dedicated to showcasing audio products, particularly speakers. The page displays key information about the products, including their appearance and price, allowing users to quickly familiarize themselves with the product.",
+            "The project was designed in a minimalist style, with an emphasis on visual appeal and a clear content structure. The focus is on clean layout, basic responsiveness, and proper placement of elements on the page.",
+            "This is the first landing page I’ve built, and it marked an important step in developing my front-end development skills. It was through this project that I gained a basic understanding of layout, page structure, and creating simple yet appealing interfaces."
+        ],
         "image": "bose-icon.png",
-        "images": []
+        "images": [
+            "bose/main.png",
+            "bose/prod.png",
+            "bose/recommended.png",
+            "bose/why.png"
+        ]
     },
     {
         "id": 6,
@@ -95,7 +145,7 @@
         "stack": ["React", "React Router", "Node.js", "NestJs", "PostgreSQL", "TailwindCSS", "shadcn/ui", "Docker"],
         "github": "https://github.com/Coveria/ThePrimeMarket",
         "demo": "",
-        "feedback": "",
+        "feedback": [""],
         "image": "tpm-icon.png",
         "images": []
     },
@@ -109,7 +159,7 @@
         "stack": ["React", "TypeScript", "TailwindCSS", "Node.js", "NestJs"],
         "github": "https://github.com/Bohdan-Diatliuk/kritik",
         "demo": "",
-        "feedback": "",
+        "feedback": [""],
         "image": "kritik-icon.png",
         "images": []
     },
@@ -123,9 +173,20 @@
         "stack": ["React", "React Router","TypeScript", "Redux-Toolkit", "Axios", "SCSS/SASS", "Lucide-React"],
         "github": "https://github.com/Bohdan-Diatliuk/UserWeatherApp",
         "demo": "https://bohdan-diatliuk.github.io/UserWeatherApp/#/",
-        "feedback": "",
+        "feedback": [
+            "The User Weather App is an application designed to demonstrate how to work with APIs and dynamic data. It immediately displays a list of users along with basic information about them and a weekly weather forecast for their cities.",
+            "The app displays temperature, weather conditions, and other details for each user, showcasing its interactivity and integration with external services. All information is loaded automatically, without the need to enter data manually.",
+            "The User Weather App is a compact and user-friendly project that demonstrates skills in working with APIs, data processing, and dynamically displaying information to the user."
+        ],
         "image": "uwp-icon.png",
-        "images": []
+        "images": [
+            "weather/main.png",
+            "weather/list.png",
+            "weather/user.png",
+            "weather/weather.png",
+            "weather/user-weather.png",
+            "weather/error.png"
+        ]
     },
     {
         "id": 9,
@@ -133,27 +194,30 @@
         "title": "React CV Viewer",
         "titleD": "React CV Viewer",
         "description": "look, it's cv",
-        "category": ["Challenges", "Frontend", "Easy"],
+        "category": ["In Progress","Challenges", "Frontend", "Easy"],
         "stack": ["React", "TypeScript", "SCSS/SASS"],
         "github": "https://github.com/Bohdan-Diatliuk/react-cv-viewer",
         "demo": "",
-        "feedback": "",
+        "feedback": [""],
         "image": "cv-icon.png",
         "images": []
     },
     {
         "id": 10,
         "slug": "cache-inspector",
-        "title": "Cache Inspector Dashboard",
+        "title": "Cache Inspector",
         "titleD": "Cache Inspector Dashboard",
         "description": "cache viewer",
         "category": ["Challenges", "Frontend", "Easy"],
         "stack": ["React", "TypeScript", "TailwindCSS"],
         "github": "https://github.com/Bohdan-Diatliuk/CasheInspector-Dashboard",
         "demo": "https://bohdan-diatliuk.github.io/CasheInspector-Dashboard/",
-        "feedback": "",
+        "feedback": [
+            "The Cache Inspector Dashboard is a single-page React application designed in the style of a dashboard (Grafana-like), created to demonstrate cache management, data auto-refresh, and basic security. The project shows how data can be effectively visualized and monitored in a web application.",
+            "The Cache Inspector Dashboard demonstrates proficiency in React, localStorage, dynamic data updates, basic security, and interactive visualization, enabling the rapid development of a fully-featured and functional admin panel."
+        ],
         "image": "cache-icon.png",
-        "images": []
+        "images": ["cache/main.png"]
     },
     {
         "id": 11,
@@ -165,7 +229,7 @@
         "stack": ["Pixi.js", "TypeScript", "Node.js", "Express", "Docker"],
         "github": "https://github.com/Bohdan-Diatliuk/neon-drifts",
         "demo": "",
-        "feedback": "",
+        "feedback": [""],
         "image": "neon-icon.png",
         "images": []
     },
@@ -179,7 +243,7 @@
         "stack": ["React Native", "Node.js", "NestJs"],
         "github": "https://github.com/Bohdan-Diatliuk/dyne-mobile",
         "demo": "",
-        "feedback": "",
+        "feedback": [""],
         "image": "dyne-icon.svg",
         "images": []
     }

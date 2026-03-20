@@ -8,9 +8,9 @@ export type Project = {
     description: string;
     category: string[];
     stack: string[];
-    github: string;
+    github?: string;
     demo: string;
-    feedback: string;
+    feedback: string[];
     image: string;
     images: string[];
 }
