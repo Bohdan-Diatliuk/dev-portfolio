@@ -7,63 +7,94 @@ function HeroProjectSection() {
     const { slug } = useParams()
     const project = projects.find(p => p.slug === slug);
 
-    const sectionRef = useRef(null);
-    const sectionInView = useInView(sectionRef, { once: true, margin: "-100px" });
+    const categoriesRef = useRef(null);
+    const linksRef = useRef(null);
+    const aboutRef = useRef(null);
+
+
+    const categoriesInView = useInView(categoriesRef, { once: true, margin: "-100px" });
+    const linksInView = useInView(linksRef, {  once: true, margin: "-100px" });
+    const aboutInView = useInView(aboutRef, {  once: true, margin: "-100px" });
     if (!project) {
         return <div>Project not found</div>
     }
 
     return (
         <section>
-            <div className='flex flex-row flex-wrap gap-2 text-white text-7xl font-medium my-6'>
+            <div className='flex flex-row flex-wrap items-baseline gap-4 text-white text-7xl font-medium mt-6 mb-50'>
                 <span className='text-white/30 pr-5'>Stack:</span>
                     {project.stack.map((prod, i) => (
-                    <code key={i} className='text-orange-600'>
+                    <span key={i} className='text-white/90 text-6xl font-jet'>
                         {prod}{i < project.stack.length - 1 ? "," : ""}
-                    </code>
+                    </span>
                 ))}    
             </div>
             
             <motion.div
-                ref={sectionRef}
+                ref={categoriesRef}
                 initial={{ opacity: 0, y: 20, filter: 'blur(12px)'  }}
-                animate={sectionInView ? { opacity: 1, y: 0, filter: 'blur(0px)' } : {}}
+                animate={categoriesInView ? { opacity: 1, y: 0, filter: 'blur(0px)' } : {}}
                 transition={{ duration: 0.4, ease: 'easeOut' }}
-                className='flex flex-row flex-wrap gap-2 text-white text-7xl font-medium my-8'
+                className='flex flex-row flex-wrap gap-4 text-7xl font-medium mb-50'
             >
-                <span className='text-white/30 pr-5'>Categories:</span>
+                <span className='text-white/30'>Categories:</span>
                 {project.category.map((cat, i) => (
-                    <span key={i} className='text-white font-regular'>
+                    <span key={i} className='text-white/90 pr-6 font-regular'>
                         {cat}{i < project.category.length - 1 ? "," : ""}
                     </span>
                 ))}    
             </motion.div>
 
             <motion.div
-                ref={sectionRef}
+                ref={linksRef}
                 initial={{ opacity: 0, y: 20, filter: 'blur(12px)'  }}
-                animate={sectionInView ? { opacity: 1, y: 0, filter: 'blur(0px)' } : {}}
-                transition={{ duration: 0.4, delay: 0.2, ease: 'easeOut' }}
-                className='flex flex-col gap-2 text-white text-7xl font-medium my-8'
+                animate={linksInView ? { opacity: 1, y: 0, filter: 'blur(0px)' } : {}}
+                transition={{ duration: 0.4, ease: 'easeOut' }}
+                className='text-white text-7xl font-medium mb-50'
             >
-                <span className='text-white/30 flex gap-5'>GitHub:
-                    <a className="text-white">{project.title}</a>
-                </span>
-                <span className='text-white/30 flex gap-5'>Demo:
-                    <a className="text-white">Live Demo</a>
-                </span>   
+                {project.github && (
+
+                    <div className="flex gap-8 items-center mb-4 ">
+                    <span className="text-white/30">GitHub:</span>
+                    <a 
+                        href={project.github} 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-slate-500 transition-colors duration-300 font-regular"
+                        >
+                        {project.title}
+                    </a>
+                </div>
+                )}
+                <div className="flex gap-8 items-center mb-4">
+                    <span className="text-white/30">Live Demo:</span>
+                    <a 
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-slate-500 transition-colors duration-300 font-regular"
+                    >
+                        Demo
+                    </a>
+                </div>
             </motion.div>
             
             <motion.div
+                ref={aboutRef}
                 initial={{ opacity: 0, y: 20, filter: 'blur(12px)' }}
-                animate={sectionInView ? { opacity: 1, y: 0, filter: 'blur(0px)' } : {}}
-                transition={{ duration: 0.4, delay: 0.4, ease: 'easeOut' }}
+                animate={aboutInView ? { opacity: 1, y: 0, filter: 'blur(0px)' } : {}}
+                transition={{ duration: 0.4, ease: 'easeOut' }}
             >
                 <h2 className='text-white/30 text-7xl font-medium'>About Project:</h2>
-                <div className='text-3xl font-light mt-4'>
-                    <p className='text-white pb-4'>{project.feedback[0]}</p>
-                    <p className='text-white pb-4'>{project.feedback[1]}</p>
-                    <p className='text-white'>{project.feedback[2]}</p>
+                <div className='text-3xl font-light mt-4'>   
+                    {project.feedback.map((prod, i) => (
+                        <p
+                            key={i}
+                            className={`text-white ${i < project.feedback.length - 1 ? 'pb-4' : ''}`}
+                        >
+                            {prod}
+                        </p>
+                    ))}
                 </div>
             </motion.div>
         </section>

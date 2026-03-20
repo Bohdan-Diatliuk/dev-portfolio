@@ -1,6 +1,7 @@
 import BeforeMainSection from "../components/BeforeMainSection";
 import HeroOverlay from "../components/HeroOverlay";
 import MyPortfolioSection from '../components/MyPortfolioSection';
+import MySection from "../components/MySection";
 import MyToolsSection from '../components/MyToolsSection';
 
 export default function HeroPage() {
@@ -14,6 +15,8 @@ export default function HeroPage() {
         <MyToolsSection />
 
         <MyPortfolioSection />
+
+        <MySection />
 
       </main>
     </div>
