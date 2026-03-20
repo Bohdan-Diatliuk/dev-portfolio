@@ -33,6 +33,14 @@ export default function HeroOverlay() {
       >
         <VantaBackground />
 
+        <h1 
+  className="absolute text-8xl font-clash text-white leading-none opacity-0 pointer-events-none"
+  style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
+  aria-hidden="true"
+>
+  {mainText}
+</h1>
+
         <motion.div
           style={{ y: textY, scale: textScale, opacity: textOpacity, filter: textFilter }}
           className="relative z-10 h-full flex flex-col items-center justify-center gap-6 select-none"
