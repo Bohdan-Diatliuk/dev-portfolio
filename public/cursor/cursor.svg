@@ -1,0 +1,6 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+  <path d="M14 44 Q8 44 8 36 Q8 30 13 28 Q12 25 14 22 Q17 16 24 17 Q26 12 32 12 Q40 12 42 19 Q48 19 50 25 Q54 26 54 32 Q54 40 46 40 Q44 44 38 44 Z"
+        fill="rgba(0,0,0,0.25)" transform="translate(2,2)"/>
+  <path d="M14 44 Q8 44 8 36 Q8 30 13 28 Q12 25 14 22 Q17 16 24 17 Q26 12 32 12 Q40 12 42 19 Q48 19 50 25 Q54 26 54 32 Q54 40 46 40 Q44 44 38 44 Z"
+        fill="#0a0a0a" stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>
