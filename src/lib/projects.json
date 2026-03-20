@@ -18,16 +18,16 @@
         "image": "dyne-icon.svg",
         "images": [
             "video:dyne/video-d.mp4",
-            "dyne/main.png",
-            "dyne/home.png",
-            "dyne/profile.png",
-            "dyne/chat.png",
-            "dyne/edit-profile.png",
-            "dyne/post.png",
-            "dyne/messages.png",
-            "dyne/user.png",
-            "dyne/settings.png",
-            "dyne/search.png"
+            "dyne/main.webp",
+            "dyne/home.webp",
+            "dyne/profile.webp",
+            "dyne/chat.webp",
+            "dyne/edit-profile.webp",
+            "dyne/post.webp",
+            "dyne/messages.webp",
+            "dyne/user.webp",
+            "dyne/settings.webp",
+            "dyne/search.webp"
         ]
     },
     {
@@ -49,19 +49,18 @@
         "image": "monolit-icon.svg",
         "images": [
             "video:monolit/video-m.mp4",
-            "monolit/main.png",
-            "monolit/main-prod.png",
-            "monolit/theme.png",
-            "monolit/prod.png",
-            "monolit/prod-2.png",
-            "monolit/cart.png",
-            "monolit/cart-2.png",
-            "monolit/cart-3.png",
-            "monolit/auth-1.png",
-            "monolit/auth-2.png",
-            "monolit/catalog.png",
-            "monolit/favourites.png",
-            "monolit/policies.png"
+            "monolit/main.webp",
+            "monolit/main-prod.webp",
+            "monolit/theme.webp",
+            "monolit/prod.webp",
+            "monolit/prod-2.webp",
+            "monolit/cart.webp",
+            "monolit/cart-2.webp",
+            "monolit/cart-3.webp",
+            "monolit/auth-1.webp",
+            "monolit/auth-2.webp",
+            "monolit/catalog.webp",
+            "monolit/favourites.webp"
         ]
     },
     {
@@ -80,12 +79,12 @@
         ],
         "image": "todoApp-icon.png",
         "images": [
-            "todoApp/main.png",
-            "todoApp/all.png",
-            "todoApp/all-2.png",
-            "todoApp/active.png",
-            "todoApp/change.png",
-            "todoApp/completed.png"
+            "todoApp/main.webp",
+            "todoApp/all.webp",
+            "todoApp/all-2.webp",
+            "todoApp/active.webp",
+            "todoApp/change.webp",
+            "todoApp/completed.webp"
         ]
     },
     {
@@ -106,11 +105,10 @@
         ],
         "image": "mybike-icon.png",
         "images": [
-            "video:mybike/video-b.mp4",
-            "mybike/main.png",
-            "mybike/compare.png",
-            "mybike/details.png",
-            "mybike/contacts.png"
+            "mybike/main.webp",
+            "mybike/compare.webp",
+            "mybike/details.webp",
+            "mybike/contacts.webp"
         ]
     },
     {
@@ -129,10 +127,10 @@
         ],
         "image": "bose-icon.png",
         "images": [
-            "bose/main.png",
-            "bose/prod.png",
-            "bose/recommended.png",
-            "bose/why.png"
+            "bose/main.webp",
+            "bose/prod.webp",
+            "bose/recommended.webp",
+            "bose/why.webp"
         ]
     },
     {
@@ -180,12 +178,12 @@
         ],
         "image": "uwp-icon.png",
         "images": [
-            "weather/main.png",
-            "weather/list.png",
-            "weather/user.png",
-            "weather/weather.png",
-            "weather/user-weather.png",
-            "weather/error.png"
+            "weather/main.webp",
+            "weather/list.webp",
+            "weather/user.webp",
+            "weather/weather.webp",
+            "weather/user-weather.webp",
+            "weather/error.webp"
         ]
     },
     {
@@ -217,7 +215,7 @@
             "The Cache Inspector Dashboard demonstrates proficiency in React, localStorage, dynamic data updates, basic security, and interactive visualization, enabling the rapid development of a fully-featured and functional admin panel."
         ],
         "image": "cache-icon.png",
-        "images": ["cache/main.png"]
+        "images": ["cache/main.webp"]
     },
     {
         "id": 11,
