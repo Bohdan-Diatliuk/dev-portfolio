@@ -77,7 +77,7 @@
             "TodoApp is a simple and user-friendly app for managing daily tasks. Its main goal is to help users stay on top of their to-do lists without cluttering the interface.",
             "The app lets you create tasks, edit them, and mark them as completed. All tasks are conveniently organized into categories: active, completed, or all, allowing you to quickly navigate the list and focus on what matters."
         ],
-        "image": "todoApp-icon.png",
+        "image": "todoApp-icon.webp",
         "images": [
             "todoApp/main.webp",
             "todoApp/all.webp",
@@ -125,7 +125,7 @@
             "The project was designed in a minimalist style, with an emphasis on visual appeal and a clear content structure. The focus is on clean layout, basic responsiveness, and proper placement of elements on the page.",
             "This is the first landing page I’ve built, and it marked an important step in developing my front-end development skills. It was through this project that I gained a basic understanding of layout, page structure, and creating simple yet appealing interfaces."
         ],
-        "image": "bose-icon.png",
+        "image": "bose-icon.webp",
         "images": [
             "bose/main.webp",
             "bose/prod.webp",
@@ -144,7 +144,7 @@
         "github": "https://github.com/Coveria/ThePrimeMarket",
         "demo": "",
         "feedback": [""],
-        "image": "tpm-icon.png",
+        "image": "tpm-icon.webp",
         "images": []
     },
     {
@@ -158,7 +158,7 @@
         "github": "https://github.com/Bohdan-Diatliuk/kritik",
         "demo": "",
         "feedback": [""],
-        "image": "kritik-icon.png",
+        "image": "kritik-icon.webp",
         "images": []
     },
     {
@@ -176,7 +176,7 @@
             "The app displays temperature, weather conditions, and other details for each user, showcasing its interactivity and integration with external services. All information is loaded automatically, without the need to enter data manually.",
             "The User Weather App is a compact and user-friendly project that demonstrates skills in working with APIs, data processing, and dynamically displaying information to the user."
         ],
-        "image": "uwp-icon.png",
+        "image": "uwp-icon.webp",
         "images": [
             "weather/main.webp",
             "weather/list.webp",
@@ -197,7 +197,7 @@
         "github": "https://github.com/Bohdan-Diatliuk/react-cv-viewer",
         "demo": "",
         "feedback": [""],
-        "image": "cv-icon.png",
+        "image": "cv-icon.webp",
         "images": []
     },
     {
@@ -214,7 +214,7 @@
             "The Cache Inspector Dashboard is a single-page React application designed in the style of a dashboard (Grafana-like), created to demonstrate cache management, data auto-refresh, and basic security. The project shows how data can be effectively visualized and monitored in a web application.",
             "The Cache Inspector Dashboard demonstrates proficiency in React, localStorage, dynamic data updates, basic security, and interactive visualization, enabling the rapid development of a fully-featured and functional admin panel."
         ],
-        "image": "cache-icon.png",
+        "image": "cache-icon.webp",
         "images": ["cache/main.webp"]
     },
     {
@@ -228,7 +228,7 @@
         "github": "https://github.com/Bohdan-Diatliuk/neon-drifts",
         "demo": "",
         "feedback": [""],
-        "image": "neon-icon.png",
+        "image": "neon-icon.webp",
         "images": []
     },
     {
