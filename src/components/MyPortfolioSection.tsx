@@ -30,7 +30,7 @@ function MyPortfolioSection() {
                   initial={{ opacity: 0, y: 40 }}
                   animate={projectsInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, delay: i * 0.1, ease: "easeOut" }}
-                  className={`relative rounded-2xl border border-white/10 bg-white/5 p-8 transition-colors duration-300 ${
+                  className={`relative rounded-2xl border border-white/10 bg-white/5 p-8 transition-colors duration-300  hoverable ${
                     isInProgress
                       ? 'opacity-60 cursor-not-allowed'
                       : 'hover:bg-white/10 hover:border-white/20 cursor-pointer'

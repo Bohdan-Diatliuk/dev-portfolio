@@ -41,7 +41,7 @@ export default function HeroOverlay() {
             {mainText}
           </h1>
 
-          <h2 className="text-4xl font-clash text-white/90 drop-shadow-md flex">
+          <h2 className="text-4xl font-clash text-white/80 drop-shadow-md flex">
             {text.split("").map((char, i) => (
               <motion.span
                 key={i}
@@ -58,7 +58,7 @@ export default function HeroOverlay() {
         <div className="absolute bottom-0 left-0 right-0 h-48 bg-linear-to-b from-transparent to-slate-950 z-10" />
       </motion.div>
 
-      <div ref={spacerRef} className="h-[300vh]" />
+      <div ref={spacerRef} className="h-[450vh]" />
     </>
   );
 }
