@@ -10,7 +10,7 @@ export default function BeforeMainSection() {
   return (
     <section className="relative z-60 min-h-screen flex items-center px-4 sm:px-12 md:px-20 lg:px-32 bg-black-950">
       <div ref={ref} className="max-w-5xl mx-auto">
-        <h2 className="text-4xl md:text-7xl font-clash leading-none text-white">
+        <h2 className="text-3xl sm:text-5xl md:text-6xl  font-clash leading-none text-white">
           {text.split("").map((char, i) => (
             <motion.span
               key={i}

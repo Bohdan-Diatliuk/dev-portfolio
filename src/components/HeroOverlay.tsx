@@ -1,6 +1,13 @@
-import { motion, useScroll, useTransform, useMotionTemplate, useMotionValueEvent } from "framer-motion";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useMotionTemplate,
+  useMotionValueEvent,
+} from "framer-motion";
 import { useRef, useState } from "react";
 import VantaBackground from "./VantaBg";
+import { ChevronDown } from "lucide-react";
 
 export default function HeroOverlay() {
   const spacerRef = useRef<HTMLDivElement>(null);
@@ -13,7 +20,11 @@ export default function HeroOverlay() {
 
   const heroOpacity = useTransform(scrollYProgress, [0, 0.6, 1], [1, 0, 0]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.15, 0.3], [0, 1, 0]);
-  const textY = useTransform(scrollYProgress, [0, 0.15, 0.6], ["20px", "0px", "-40px"]);
+  const textY = useTransform(
+    scrollYProgress,
+    [0, 0.15, 0.6],
+    ["20px", "0px", "-40px"],
+  );
   const textScale = useTransform(scrollYProgress, [0, 0.15, 0.5], [1.3, 1, 1]);
   const textBlur = useTransform(scrollYProgress, [0, 0.15], [12, 0]);
   const textFilter = useMotionTemplate`blur(${textBlur}px)`;
@@ -34,10 +45,15 @@ export default function HeroOverlay() {
         <VantaBackground />
 
         <motion.div
-          style={{ y: textY, scale: textScale, opacity: textOpacity, filter: textFilter }}
-          className="relative z-10 h-full flex flex-col items-center justify-center gap-6 select-none"
+          style={{
+            y: textY,
+            scale: textScale,
+            opacity: textOpacity,
+            filter: textFilter,
+          }}
+          className="relative z-10 h-full flex flex-col items-center justify-center gap-3 sm:gap-4 md:gap-6 px-4 text-center select-none"
         >
-          <h1 className="text-8xl font-clash text-white leading-none drop-shadow-lg">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-clash text-white leading-none drop-shadow-lg">
             {mainText}
           </h1>
 
@@ -53,6 +69,13 @@ export default function HeroOverlay() {
               </motion.span>
             ))}
           </h2>
+          <motion.span
+            initial={{ opacity: 0, y: 8 }}
+            animate={h1Visible ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 1.5, ease: "easeOut" }}
+          >
+            <ChevronDown className="text-white/90 w-6 h-6 sm:w-8 sm:h-8" />
+          </motion.span>
         </motion.div>
 
         <div className="absolute bottom-0 left-0 right-0 h-48 bg-linear-to-b from-transparent to-slate-950 z-10" />
