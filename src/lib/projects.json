@@ -254,7 +254,6 @@
         "category": ["Game", "Frontend", "Medium", "Claude"],
         "stack": ["React Native", "TypeScript"],
         "github": "https://github.com/Bohdan-Diatliuk/rn-2048",
-        "demo": "",
         "feedback": [
             "RN 2048 is a mobile implementation of the classic 2048 puzzle game, built with React Native and TypeScript. The goal is simple: slide tiles across a 4×4 grid, merge identical numbers, and reach the 2048 tile — but getting there requires strategy and planning.",
             "The game features smooth swipe gestures in all four directions, instant tile merging with animated transitions, and a live score counter that updates with every move. When no moves remain, the game detects the end state and prompts the player to restart.",

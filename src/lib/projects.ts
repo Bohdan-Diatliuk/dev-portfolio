@@ -9,7 +9,7 @@ export type Project = {
     category: string[];
     stack: string[];
     github?: string;
-    demo: string;
+    demo?: string;
     feedback: string[];
     image: string;
     images: string[];
