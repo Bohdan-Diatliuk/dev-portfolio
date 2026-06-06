@@ -247,6 +247,26 @@
     },
     {
         "id": 13,
+        "slug": "interview-drill",
+        "title": "Interview Drill",
+        "titleD": "Interview Drill - Interview Prep Tool",
+        "description": "flashcard app for interview prep",
+        "category": ["Fullstack", "Medium"],
+        "stack": ["React", "TypeScript", "NestJS", "PostgreSQL", "TypeORM", "TailwindCSS", "Docker"],
+        "github": "https://github.com/Bohdan-Diatliuk/interview-drill",
+        "demo": "https://interview-drill-kappa.vercel.app",
+        "feedback": [
+            "Interview Drill is a full-stack flashcard application built to help developers prepare for technical interviews. It covers JavaScript, TypeScript, React, HTML, and CSS — and supports any custom category added through the admin panel.",
+            "The frontend offers two study modes: a flip-card drill mode with keyboard shortcuts for fast navigation, and a list mode for reviewing questions and answers at a glance. Each session tracks personal progress per question — marking items as 'known' or 'still learning' — with stats visible right on the main screen.",
+            "Progress is stored per user without requiring any authentication. Each browser gets a unique ID saved in localStorage, which is sent with every request so progress is fully isolated between users.",
+            "The backend is built with NestJS, TypeORM, and PostgreSQL, deployed on Railway. It exposes a REST API for questions, progress, and useful links — with full CRUD support and per-user progress filtering.",
+            "A separate admin panel allows managing the question base: adding, editing, and deleting questions and categories, renaming categories in bulk, and managing useful resource links. The panel is protected by a simple password and is deployed independently on Vercel."
+        ],
+        "image": "interview-drill-icon.webp",
+        "images": ["interview-drill/drill-1.webp", "interview-drill/drill-2.webp", "interview-drill/drill-3.webp", "interview-drill/drill-4.webp"]
+    },
+    {
+        "id": 14,
         "slug": "rn-2048",
         "title": "RN 2048",
         "titleD": "React Native 2048",
