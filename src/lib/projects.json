@@ -262,7 +262,7 @@
         "title": "Interview Drill",
         "titleD": "Interview Drill - Interview Prep Tool",
         "description": "flashcard app for interview prep",
-        "category": ["Fullstack", "Medium"],
+        "category": ["Fullstack", "Medium", "Claude"],
         "stack": ["React", "TypeScript", "NestJS", "PostgreSQL", "TypeORM", "TailwindCSS", "Docker"],
         "github": "https://github.com/Bohdan-Diatliuk/interview-drill",
         "demo": "https://interview-drill-kappa.vercel.app",
@@ -317,5 +317,19 @@
             "date-time/second.webp",
             "date-time/third.webp"
         ]
+    },
+    {
+        "id": 16,
+        "slug": "eduTech",
+        "title": "EduTech",
+        "titleD": "EduTech - platform for study",
+        "description": "knowing a lot is cool",
+        "category": ["In Progress", "Fullstack", "Medium", "Study"],
+        "stack": ["React", "TailwindCSS", "React Router", "TypeScript", "Lucide-React", "React DOM", "Node.js", "NestJS", "Axios"],
+        "github": "",
+        "demo": "",
+        "feedback": [],
+        "image": "edutech-icon.webp",
+        "images": []
     }
 ]
