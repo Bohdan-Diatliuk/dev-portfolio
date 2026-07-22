@@ -19,12 +19,12 @@ function MyToolsSection() {
             animate={stackInView ? { opacity: 1, y: 0, filter: "blur(0px)"} : {}}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <h3 className="text-9xl font-clash text-white">
+            <h3 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-clash text-white">
               My Tools
             </h3>
 
             <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col gap-2">
-              <h4 className="text-5xl font-clash text-red-700">My Heart</h4>
+              <h4 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-clash text-red-700">My Heart</h4>
               {coreStack.map((tech) => (
                   <span key={tech} className="text-xl font-clash text-white/60 tracking-wide">
                     {tech}

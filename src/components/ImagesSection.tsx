@@ -144,6 +144,7 @@ function ImagesSection() {
                                 key={current}
                                 src={`/${images[current]}`}
                                 alt={`${project.title} ${current + 1}`}
+                                decoding="async"
                                 custom={direction}
                                 variants={variants}
                                 initial="enter"
@@ -206,6 +207,8 @@ function ImagesSection() {
                                 <img
                                 src={`/${item}`}
                                 alt=""
+                                loading="lazy"
+                                decoding="async"
                                 className="w-full h-full object-cover"
                                 />
                             )}

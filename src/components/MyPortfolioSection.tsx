@@ -11,7 +11,7 @@ function MyPortfolioSection() {
     return (
         <section ref={projectsRef} className="max-w-5xl mx-auto mt-150">
           <motion.h3
-            className="text-9xl font-clash mb-12 text-white pb-20"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-clash mb-12 text-white pb-20"
             initial={{ opacity: 0, y: 30 }}
             animate={projectsInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 3.6, ease: "easeOut" }}
@@ -47,6 +47,8 @@ function MyPortfolioSection() {
                     <img
                       src={`/${project.image}`}
                       alt={project.title}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-contain"
                     />
                   </div>

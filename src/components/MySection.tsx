@@ -26,7 +26,7 @@ function MySection() {
                 initial={{ opacity: 0, y: 30, filter: "blur(12px)" }}
                 animate={mainInView ? { opacity: 1, y: 0, filter: "blur(0px)"} : {}}
                 transition={{ duration: 0.4, ease: "easeOut" }}
-                className="text-white text-9xl font-clash mb-5"
+                className="text-white text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-clash mb-5"
             >
                 About Meee
             </motion.h3>
@@ -103,7 +103,7 @@ function MySection() {
                     initial={{ opacity: 0, y: 30, filter: "blur(12px)" }}
                     animate={chillInView ? { opacity: 1, y: 0, filter: "blur(0px)"} : {}}
                     transition={{ duration: 0.6, ease: "easeOut" }}
-                    className="text-white text-7xl font-clash"
+                    className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-clash"
                 >
                     Okay, it was so seriusly, chill bro, come here
                 </motion.span>

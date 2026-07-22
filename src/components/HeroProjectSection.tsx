@@ -23,7 +23,7 @@ function HeroProjectSection() {
 
   return (
     <section>
-      <div className="text-white text-7xl font-medium mt-6 mb-50">
+      <div className="text-white text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-medium mt-6 mb-50">
         {project.github && (
           <div className="flex gap-8 items-center mb-4 ">
             <span className="text-white/30">GitHub:</span>
@@ -57,11 +57,11 @@ function HeroProjectSection() {
         initial={{ opacity: 0, y: 20, filter: "blur(12px)" }}
         animate={linksInView ? { opacity: 1, y: 0, filter: "blur(0px)" } : {}}
         transition={{ duration: 0.4, ease: "easeOut" }}
-        className="flex flex-row flex-wrap items-baseline gap-4 text-white text-7xl font-medium mb-50"
+        className="flex flex-row flex-wrap items-baseline gap-4 text-white text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-medium mb-50"
       >
         <span className="text-white/30 pr-5">Stack:</span>
         {project.stack.map((prod, i) => (
-          <span key={i} className="text-white/90 text-6xl font-jet">
+          <span key={i} className="text-white/90 text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-jet">
             {prod}
             {i < project.stack.length - 1 ? "," : ""}
           </span>
@@ -75,7 +75,7 @@ function HeroProjectSection() {
           categoriesInView ? { opacity: 1, y: 0, filter: "blur(0px)" } : {}
         }
         transition={{ duration: 0.4, ease: "easeOut" }}
-        className="flex flex-row flex-wrap gap-4 text-7xl font-medium mb-50"
+        className="flex flex-row flex-wrap gap-4 text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-medium mb-50"
       >
         <span className="text-white/30">Categories:</span>
         {project.category.map((cat, i) => (
@@ -92,7 +92,7 @@ function HeroProjectSection() {
         animate={aboutInView ? { opacity: 1, y: 0, filter: "blur(0px)" } : {}}
         transition={{ duration: 0.4, ease: "easeOut" }}
       >
-        <h2 className="text-white/30 text-7xl font-medium">About Project:</h2>
+        <h2 className="text-white/30 text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-medium">About Project:</h2>
         <div className="text-3xl font-light mt-4">
           {project.feedback.map((prod, i) => (
             <p

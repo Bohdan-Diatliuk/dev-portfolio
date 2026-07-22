@@ -33,7 +33,7 @@ export default function ProjectPage() {
         </div>
         
         <main className="max-w-5xl mx-auto my-16">
-            <h1 className="text-7xl text-white font-clash pb-5">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-clash pb-5">
                 {project.titleD}
             </h1>
             
