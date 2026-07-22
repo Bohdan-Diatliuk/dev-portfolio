@@ -7,17 +7,35 @@ function MyPortfolioSection() {
     const projectsRef = useRef(null);
     const navigate = useNavigate();
     const projectsInView = useInView(projectsRef, { margin: "-100px" });
-    
+    const inProgressCount = projects.filter((project) => project.category.includes("In Progress")).length;
+    const doneCount = projects.length - inProgressCount;
+
     return (
         <section ref={projectsRef} className="max-w-5xl mx-auto mt-150">
           <motion.h3
-            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-clash mb-12 text-white pb-20"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-clash text-white"
             initial={{ opacity: 0, y: 30 }}
             animate={projectsInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 3.6, ease: "easeOut" }}
           >
             My Portfolio
           </motion.h3>
+          <motion.p
+            className="text-white/50 font-regular text-sm sm:text-base"
+            initial={{ opacity: 0, y: 20 }}
+            animate={projectsInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 3.6, delay: 0.1, ease: "easeOut" }}
+          >
+            {projects.length} projects
+          </motion.p>
+          <motion.p
+            className="text-white/30 font-regular text-xs sm:text-sm mb-12 pb-20"
+            initial={{ opacity: 0, y: 20 }}
+            animate={projectsInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 3.6, delay: 0.15, ease: "easeOut" }}
+          >
+            {doneCount} done · {inProgressCount} in progress
+          </motion.p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {projects.map((project, i) => {

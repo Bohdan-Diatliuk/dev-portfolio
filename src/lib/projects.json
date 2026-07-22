@@ -152,14 +152,25 @@
         "slug": "kritik",
         "title": "Kritik",
         "titleD": "Kritik",
-        "description": "rate this product here",
-        "category": ["In Progress", "Store", "Fullstack", "Medium"],
-        "stack": ["React", "TypeScript", "TailwindCSS", "Node.js", "NestJs"],
+        "description": "you can rate products here",
+        "category": ["Review", "Store", "Fullstack", "Medium"],
+        "stack": ["React", "TypeScript", "TailwindCSS", "Node.js", "NestJs", "PrismaORM", "PostgreSQL"],
         "github": "https://github.com/Bohdan-Diatliuk/kritik",
         "demo": "",
-        "feedback": [""],
+        "feedback": [
+            "Kritik is a platform for honest reviews of real products — meat, fish, vegetables, baked goods, drinks, and more. Anyone can open a product card, leave a rating from 1 to 5 stars along with a text review under their own name or anonymously, and add a product that isn't in the catalog yet.",
+            "The catalog is organized by categories, making it easy to browse and find specific products. Each product page shows the average rating and the full list of reviews, giving a clear picture of real user experience before making a purchase decision.",
+            "The frontend is built with React 19, TypeScript, and Vite, using React Router for navigation and Tailwind CSS v4 for styling. Pagination is handled with react-paginate, and lucide-react provides the icon set across the interface.",
+            "The backend is a NestJS API backed by Prisma ORM and PostgreSQL, with class-validator and class-transformer enforcing data integrity, and Multer handling product photo uploads. The entire stack is containerized with Docker Compose, covering both development and production setups.",
+            "Kritik shows how a community-driven review system can be built end to end — from catalog structure and image uploads to anonymous feedback — with a clean separation between a typed React frontend and a robust NestJS backend."
+        ],
         "image": "kritik-icon.webp",
-        "images": []
+        "images": [
+            "kritik/main.webp",
+            "kritik/main-2.webp",
+            "kritik/third.webp",
+            "kritik/last.webp"
+        ]
     },
     {
         "id": 8,
@@ -282,5 +293,29 @@
         ],
         "image": "rn-2048-icon.webp",
         "images": ["rn-2048/main-1.webp", "rn-2048/middle-2.webp", "rn-2048/end-3.webp"]
+    },
+    {
+        "id": 15,
+        "slug": "date-time",
+        "title": "Date Time",
+        "titleD": "Date Time - choose day for your date",
+        "description": "app for choose date time with your soulmate",
+        "category": ["Frontend", "Easy", "Claude"],
+        "stack": ["Astro.js", "TailwindCSS", "React", "TypeScript", "Lucide-Astro", "React DOM", "Telegram Bot"],
+        "github": "https://github.com/Bohdan-Diatliuk/astro-js",
+        "demo": "https://date-time-delta.vercel.app/",
+        "feedback": [
+            "Date Invitation is an interactive four-step flow for asking someone out on a date, built with Astro and React islands. It opens with a simple question — 'Will you go on a date with me?' — where the 'Yes' button leads forward and the 'No' button playfully runs away from the cursor.",
+            "After accepting, the recipient picks a date on a calendar, then chooses a spot on an interactive map. The location step uses Leaflet with OpenStreetMap tiles, and reverse geocoding through Nominatim turns the picked coordinates into a real, readable address.",
+            "There's no backend or database involved — all state (the chosen date, coordinates, and address) travels between steps purely through URL query parameters. The final confirmation screen summarizes the choice and, once confirmed, triggers a server endpoint that sends the details straight to Telegram via the Bot API.",
+            "The project is built with Astro and TypeScript, using React islands only where interactivity is needed, and styled with Tailwind CSS v4. Pages that depend on query parameters or server secrets — the map, confirmation, and notify endpoint — are rendered on demand, while the landing and calendar steps stay fully static.",
+            "Date Invitation turns a simple 'will you go out with me' question into a small, polished multi-step experience — a compact demonstration of Astro's islands architecture, URL-driven state, and a real third-party integration with Telegram."
+        ],
+        "image": "date-time.webp",
+        "images": [
+            "date-time/main.webp",
+            "date-time/second.webp",
+            "date-time/third.webp"
+        ]
     }
 ]
