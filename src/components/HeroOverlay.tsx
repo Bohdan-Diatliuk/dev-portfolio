@@ -19,11 +19,11 @@ export default function HeroOverlay() {
   });
 
   const heroOpacity = useTransform(scrollYProgress, [0, 0.6, 1], [1, 0, 0]);
-  const textOpacity = useTransform(scrollYProgress, [0, 0.15, 0.3], [0, 1, 0]);
+  const textOpacity = useTransform(scrollYProgress, [0, 0.15], [0, 1]);
   const textY = useTransform(
     scrollYProgress,
-    [0, 0.15, 0.6],
-    ["20px", "0px", "-40px"],
+    [0, 0.15, 0.35, 1],
+    ["20px", "0px", "0px", "-160vh"],
   );
   const textScale = useTransform(scrollYProgress, [0, 0.15, 0.5], [1.3, 1, 1]);
   const textBlur = useTransform(scrollYProgress, [0, 0.15], [12, 0]);
@@ -53,11 +53,11 @@ export default function HeroOverlay() {
           }}
           className="relative z-10 h-full flex flex-col items-center justify-center gap-3 sm:gap-4 md:gap-6 px-4 text-center select-none"
         >
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-clash text-white leading-none drop-shadow-lg">
+          <h1 className="text-3xl sm:text-6xl md:text-7xl lg:text-8xl font-clash text-white leading-none drop-shadow-lg">
             {mainText}
           </h1>
 
-          <h2 className="text-4xl font-clash text-white/80 drop-shadow-md flex">
+          <h2 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-clash text-white/80 drop-shadow-md flex">
             {text.split("").map((char, i) => (
               <motion.span
                 key={i}

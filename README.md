@@ -12,7 +12,7 @@
 | Monolit Digital Store | https://github.com/fs-aug25-Monolit-Digital/nice-gadgets-monolit | https://nice-gadgets-monolit.netlify.app |
 | TodoApp | https://github.com/Bohdan-Diatliuk/TodoApp | https://bohdan-diatliuk.github.io/TodoApp |
 | MYBIKE Landing | https://github.com/Bohdan-Diatliuk/MyBike-landing_page | https://bohdan-diatliuk.github.io/MyBike-landing_page |
-| BOSE Landing | — | https://bdtlk-bose-web.netlify.app |
+| BOSE Landing | -| https://bdtlk-bose-web.netlify.app |
 | The Prime Market | https://github.com/Coveria/ThePrimeMarket | in progress |
 | Kritik | https://github.com/Bohdan-Diatliuk/kritik | - |
 | User Weather App | https://github.com/Bohdan-Diatliuk/UserWeatherApp | https://bohdan-diatliuk.github.io/UserWeatherApp |

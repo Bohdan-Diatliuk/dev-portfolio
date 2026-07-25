@@ -22,7 +22,7 @@ export default function ProjectPage() {
     return (
         <>
         <div className='relative max-w-5xl mx-auto'>
-            <div className='absolute -left-16 top-6'>
+            <div className='absolute top-1 left-0 md:-left-16 md:top-6'>
                 <button 
                     className='text-white hover:text-white/40 transition-colors'
                     onClick={() => navigate(-1)}
@@ -32,7 +32,7 @@ export default function ProjectPage() {
             </div>
         </div>
         
-        <main className="max-w-5xl mx-auto my-16">
+        <main className="max-w-5xl mx-auto my-16 px-7 md:px-0">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-clash pb-5">
                 {project.titleD}
             </h1>
