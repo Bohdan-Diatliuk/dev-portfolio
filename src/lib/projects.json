@@ -178,7 +178,7 @@
         "title": "User Weather App",
         "titleD": "User Weather App",
         "description": "current weather information",
-        "category": ["Challenges", "Frontend", "Easy"],
+        "category": ["In Progress","Challenges", "Frontend", "Easy"],
         "stack": ["React", "React Router","TypeScript", "Redux-Toolkit", "Axios", "SCSS/SASS", "Lucide-React"],
         "github": "https://github.com/Bohdan-Diatliuk/UserWeatherApp",
         "demo": "https://bohdan-diatliuk.github.io/UserWeatherApp/#/",
