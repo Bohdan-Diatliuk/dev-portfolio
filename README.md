@@ -21,5 +21,5 @@
 | NEON DRIFT | https://github.com/Bohdan-Diatliuk/neon-drifts | in progress |
 | DYNE APP (mobile) | https://github.com/Bohdan-Diatliuk/dyne-mobile | in progress |
 | Interview Drill | https://github.com/Bohdan-Diatliuk/interview-drill | https://interview-drill-kappa.vercel.app |
-| RN 2048 | https://github.com/Bohdan-Diatliuk/rn-2048 | — |
+| RN 2048 | https://github.com/Bohdan-Diatliuk/rn-2048 | - |
 | Date Time | https://github.com/Bohdan-Diatliuk/astro-js | https://date-time-delta.vercel.app/ |
